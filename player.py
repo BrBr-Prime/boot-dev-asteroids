@@ -17,4 +17,3 @@ class Player(CircleShape):
         line_width = 2
         points = self.triangle()
         pygame.draw.polygon(screen, color, points, line_width)
-
