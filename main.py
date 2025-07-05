@@ -4,6 +4,7 @@
 import pygame
 from constants import *
 from player import Player
+from circleshape import CircleShape
 
 def main():
     pygame.init()
