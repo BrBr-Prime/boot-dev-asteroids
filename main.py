@@ -24,6 +24,7 @@ def main():
         dt = clock.tick(60) / 1000
         screen.fill((0,0,0))
         player.draw(screen)
+        player.update(dt)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
