@@ -3,7 +3,7 @@ from constants import *
 import pygame
 
 class Player(CircleShape):
-    def __init__(self, x, y, rotate):
+    def __init__(self, x, y):
         super().__init__(x, y, PLAYER_RADIUS)
         self.rotation = 0
 
@@ -29,7 +29,7 @@ class Player(CircleShape):
         keys = pygame.key.get_pressed()
 
         if keys[pygame.K_a]:
-            rotate(-dt)
+            self.rotate(-dt)
 
         if keys[pygame.K_d]:
-            rotate(dt)
+            self.rotate(dt)
