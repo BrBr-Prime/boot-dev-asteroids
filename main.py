@@ -25,6 +25,7 @@ def main():
     Player.containers = (updatable, drawable)
     Asteroid.containers = (asteroids, updatable, drawable)
     player = Player(x, y)
+    asteroidfield = AsteroidField()
 
     print("Starting Asteroids!")
     while True:
