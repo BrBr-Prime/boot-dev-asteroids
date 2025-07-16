@@ -17,11 +17,10 @@ def main():
     print (f"{screen}")
     x = SCREEN_WIDTH / 2
     y = SCREEN_HEIGHT / 2
-    player = Player(x, y)
     updatable = pygame.sprite.Group()
     drawable = pygame.sprite.Group()
-    Player.container = (updatable, drawable)
-    player = Player(x,y)
+    Player.containers = (updatable, drawable)
+    player = Player(x, y)
 
     print("Starting Asteroids!")
     while True:
