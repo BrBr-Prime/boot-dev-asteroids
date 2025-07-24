@@ -3,6 +3,7 @@
 # throughout this file
 import pygame
 import time
+import sys
 from constants import *
 from asteroidfield import *
 from player import Player
