@@ -2,11 +2,13 @@
 # the open-source pygame library
 # throughout this file
 import pygame
+import time
 from constants import *
 from asteroidfield import *
 from player import Player
 from circleshape import CircleShape
 from asteroid import Asteroid
+
 
 def main():
     pygame.init()
@@ -45,6 +47,7 @@ def main():
         for asteroid in asteroids:
             if player.collision(asteroid):
                 print("Game over!")
+                time.sleep(2)
                 sys.exit()
 
         pygame.display.flip()
