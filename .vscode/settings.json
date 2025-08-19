@@ -1,0 +1,7 @@
+{
+    "editor.parameterHints.enabled": false,
+    "editor.parameterHints.cycle": false,
+    "editor.suggest.showTypeParameters": false,
+    "breadcrumbs.showTypeParameters": false,
+    "outline.showTypeParameters": false
+}
